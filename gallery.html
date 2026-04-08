@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery – HQ Ranch Encounters</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="announce-bar">
+    <strong>New arrival!</strong> Meet Waffles the Giraffe — now open for visits! &nbsp;
+    <a href="about.html">Learn More →</a>
+  </div>
+
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">HQ Ranch Encounters</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li class="has-dropdown">
+        <a href="prices.html">Tour Prices</a>
+        <ul class="dropdown"><li><a href="book.html">Reserve a Time</a></li></ul>
+      </li>
+      <li class="has-dropdown">
+        <a href="about.html">About Us</a>
+        <ul class="dropdown"><li><a href="gallery.html" class="active">Gallery</a></li></ul>
+      </li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="book.html" class="nav-cta">Reserve Now</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-hero">
+    <h1>Ranch Gallery</h1>
+    <p>Click any photo to view it full size</p>
+  </div>
+
+  <section class="section section-white">
+    <div class="section-inner">
+      <div class="section-label">Photos</div>
+      <h2 class="section-title">Life at the Ranch</h2>
+      <div class="divider"></div>
+
+      <!-- Gallery grid — clicking opens lightbox via JS -->
+      <div class="gallery-grid" style="grid-template-columns: repeat(3, 1fr); gap: 0.85rem;">
+        <img src="https://hqencounters.com/wp-content/uploads/2024/02/HQ-Farm-Sept-23-11-1024x683.jpeg" alt="Ranch animals" loading="lazy">
+        <img src="https://hqencounters.com/wp-content/uploads/2024/03/Lemur-Blog-Pic-1024x683.jpeg" alt="Lemur close-up" loading="lazy">
+        <img src="https://hqencounters.com/wp-content/uploads/2024/02/HQ-Farm-Sept-23-26-768x512.jpeg" alt="Ranch visit" loading="lazy">
+        <img src="https://hqencounters.com/wp-content/uploads/2026/03/4C2D1146-551D-497A-9818-AF53FDD82D23-2-768x1023.jpg" alt="Albino porcupine" loading="lazy">
+        <img src="https://hqencounters.com/wp-content/uploads/2026/03/IMG_0953-2-768x1024.jpg" alt="Fennec fox Foxy" loading="lazy">
+        <img src="https://hqencounters.com/wp-content/uploads/2024/02/38d86682-4d03-4a3d-a2fa-ae11dd8a2ce6-400x770.jpg" alt="Happy visitors" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <h2>Experience It in Person</h2>
+    <p>Photos don't do it justice — come see for yourself.</p>
+    <a href="book.html" class="btn btn-primary btn-lg">Reserve Your Time</a>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">HQ Ranch Encounters</div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="prices.html">Tour Prices</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <p class="footer-copy">© 2026 HQ Ranch Encounters · Claremore, Oklahoma</p>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX OVERLAY -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">✕</button>
+    <img id="lightboxImg" src="" alt="">
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
